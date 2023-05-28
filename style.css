@@ -19,7 +19,7 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: #1B1937;
   overflow: hidden;
 }
@@ -104,14 +104,16 @@
   height: 300px;
 }
 .container .card {
-height: 80%;
-flex-wrap: wrap;
+height: 90%;
+flex-wrap: nowrap;
 flex-direction: column-reverse;
-overflow: auto;
+
 }
 .text-container {
   width: 100%;
-  height: 55%;
+  height: 60%;
+  text-align: center;
+  margin-top: 40px;
 }
 .text-box {
   margin-top: 10px;
@@ -121,14 +123,45 @@ overflow: auto;
 }
 .text-box .stats-box {
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 40px;
   text-align: center;
+  
 }
 .text-box .stats-box p {
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: 10px;
 }
 .text-box .stats-box span {
   font-size: 13px;
-  margin-top: 3px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+}
+@media (max-width: 365px) {
+.text-container {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.text-box {
+  margin-top: 50px;
+}
+.text-box h1 {
+  font-size: 27px;
+}
+.text-box .stats-box {
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+.text-box .stats-box div p {
+  font-size: 20px;
+  margin-top: 9px;
+  padding: 0;
+}
+.text-box .stats-box span {
+  font-size: 10px;
+  margin-top: 1px;
+  margin-bottom: 5px;
 }
 }
